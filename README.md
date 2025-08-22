@@ -1,85 +1,93 @@
-COVID-19 Global Data Tracker
+# COVID-19 Global Data Tracker
 
-A Python-based project that tracks and visualizes global COVID-19 data using public datasets.
-This project was developed as part of the Python Development Module final submission.
+A beginner-friendly data analysis project that downloads the latest global COVID-19 dataset, explores trends, and visualizes key metrics (cases, deaths, tests, vaccinations) using Python in a Jupyter Notebook.
 
- Objectives
+## 🎯 Objectives
 
-Collect global COVID-19 data from open sources
+* Load and clean COVID-19 data from a trusted public source (Our World in Data).
+* Explore global and country-level trends.
+* Build clear visualizations (time series, bar charts, and a world map).
+* Add light interactivity (country & metric selectors).
+* Run the notebook end-to-end without errors and share on GitHub.
 
-Perform basic data cleaning and transformation
+## 🧰 Tools & Libraries
 
-Visualize the spread of COVID-19 cases, deaths, and vaccinations
+* Python 3.9+
+* Jupyter Notebook
+* pandas, numpy
+* matplotlib, plotly
+* ipywidgets (for interactivity)
+* requests (robust data download)
 
-Gain insights from trends across countries and continents
+## 📦 Project Structure
 
-🛠 Tools & Libraries Used
+```
+covid19-global-data-tracker/
+├─ notebooks/
+│  └─ covid19_global_tracker.ipynb
+├─ src/
+│  └─ __init__.py
+├─ outputs/               # charts/exports saved here by the notebook
+├─ requirements.txt
+├─ .gitignore
+├─ LICENSE
+└─ README.md
+```
 
-Python 3.10
+## ▶️ How to Run (Windows / macOS / Linux)
 
-Pandas – data manipulation
+1. **Create & activate a virtual environment (recommended)**
 
-Matplotlib – visualizations
+   ```bash
+   # Windows (PowerShell)
+   python -m venv .venv
+   .venv\Scripts\Activate.ps1
 
-Seaborn – statistical plots
+   # macOS/Linux
+   python3 -m venv .venv
+   source .venv/bin/activate
+   ```
 
-Plotly – interactive charts
+2. **Install dependencies**
 
-Requests – fetching data
+   ```bash
+   pip install -r requirements.txt
+   ```
 
- How to Run the Project
+3. **Launch Jupyter and open the notebook**
 
-Clone this repository:
+   ```bash
+   jupyter notebook
+   ```
 
-git clone https://github.com/your-username/covid19-global-tracker.git
+   Open: `notebooks/covid19_global_tracker.ipynb` and run all cells (Kernel → Restart & Run All).
 
+## 🌍 Data Source
 
-Navigate into the project folder:
+* Our World in Data (OWID) COVID-19 dataset. The notebook pulls from:
 
-cd covid19-global-tracker
+  * `https://covid.ourworldindata.org/data/owid-covid-data.csv` (primary)
+  * `https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/owid-covid-data.csv` (fallback)
 
+## 📝 Notes & Tips
 
-Install required libraries:
+* If an internet connection is blocked, download the CSV manually and place it in `notebooks/data/owid-covid-data.csv`, then set `USE_LOCAL_FILE = True` in the notebook.
+* All figures are saved in `outputs/` when you run the export cells.
 
-pip install -r requirements.txt
+## 🔍 Insights & Reflections (example prompts)
 
+* Which countries have the highest total cases and deaths? What about per million people?
+* How do vaccination rates relate to case/death trends over time?
+* Are there data gaps or anomalies you noticed?
+* What did you learn building this? What was challenging? What would you add next?
 
-Launch Jupyter Notebook:
+## ✅ Submission Checklist
 
-jupyter notebook
+* [ ] Notebook runs from start to finish without errors.
+* [ ] Plots render correctly.
+* [ ] README updated with your reflections.
+* [ ] Pushed to a **public GitHub repo** and link shared.
 
+---
 
-Open and run the notebook file:
-
-COVID-19_Tracker.ipynb
-
- Example Visualizations
-
-Global COVID-19 trend over time (cases & deaths)
-
-Top 10 countries by total cases and deaths
-
-Vaccination progress worldwide
-
-Comparison of continents in terms of pandemic impact
-
- Insights & Reflections
-
-The pandemic evolved differently across regions, with varying peaks and waves.
-
-Vaccination rollout significantly impacted the decline of severe cases and deaths.
-
-This project improved my understanding of:
-
-Working with real-world datasets
-
-Cleaning and preparing large data in Python
-
-Building meaningful and interactive visualizations
-
- Acknowledgments
-
-Our World in Data
- – for providing the COVID-19 dataset
-
-Open-source Python community for tools and resources
+*This project is for educational use. Data is provided “as is”; always verify conclusions with multiple sources.*
